@@ -1,0 +1,88 @@
+
+/*Encabezado*/
+header{
+    display: flex;
+    grid-row: 1;
+    grid-column: 1/4;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $colorFondoMenus;
+    nav{
+        #logo{
+            height: $alturaImagen; 
+        }
+        div{
+            .navbar-brand{
+                padding-left: 20px;
+                color: $colorLetrasPrincipal;
+            }            
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: x-large;
+                .nav-item{
+                    padding: 30px;
+                    a{
+                        padding-right: 20px;
+                        text-decoration: none;
+                        color: $colorLetrasPrincipal;
+                    }
+                    
+                }
+            }
+            #opciones{
+                padding: 30px;
+                a{
+                    padding-right: 20px;
+                    text-decoration: none;
+                    color: $colorLetrasPrincipal;
+                }
+            }
+        
+            .nav-item{
+                align-items: center;
+                
+                div{
+                        a{
+                            padding-right: 20px;
+                            text-decoration: none;
+                            color: $colorLetrasPrincipal;
+                        }
+                    
+                    }
+                        img{
+                        width: 50px;
+                        height: 1.5cm;
+                        }
+            }        
+                    
+                #iconos{
+                    #LiveToastBell:hover {
+                        animation: shake 0.5s infinite;
+                      }
+                      
+                      @keyframes shake {
+                        0%, 100% {
+                          transform: translateX(0);
+                        }
+                        25%, 75% {
+                          transform: translateX(-5px);
+                        }
+                        50% {
+                          transform: translateX(5px);
+                        }
+                      }
+        
+                    i {
+                        padding: 15px;
+                        text-decoration: none;
+                        color: $Icono;
+                    }
+                    
+        }
+    
+    }
+}   
+
+}

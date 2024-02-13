@@ -1,0 +1,36 @@
+/*Tanda de productos*/
+.catalogo{
+
+    .row{
+    .card{
+        .desc{
+            font-size: xx-small;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            p{
+                font-size: smaller;
+            }
+            .Cl{
+                width: 8px;
+                height: 2mm;
+                padding: 0px;
+            }
+        }
+        img{
+            padding: 10px;
+            height: $alturaImagen; 
+        }
+        .card-body{
+            #precio::after{
+                content: " €";
+            }    
+        }
+    }
+}
+
+.card{
+    z-index: 0;
+}
+}

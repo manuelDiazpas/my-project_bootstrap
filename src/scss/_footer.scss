@@ -1,0 +1,68 @@
+
+/*Pie de pagina*/
+footer{
+    display: flex;
+    flex-direction: column;
+    grid-row: 3;
+    grid-column: 1/4;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $colorFondoMenus;
+    position: fixed;
+    bottom: 0;
+    p{
+        color: $colorLetrasPrincipal;
+    }
+
+    #cc{
+        width: 30%;
+        margin-left: 20%;
+        margin-right: 20%;
+        a{
+            display: inline-block;
+            text-decoration: none;
+        }
+        #img1{
+            height:22px!important;
+            margin-left:3px;
+            vertical-align:text-bottom;
+        }
+        #img2{
+            height:22px!important;
+            margin-left:3px;
+            vertical-align:text-bottom;
+        }
+        #img3{
+            height:22px!important;
+            margin-left:3px;
+            vertical-align:text-bottom;
+        }
+        #img4{
+            height:22px!important;
+            margin-left:3px;
+            vertical-align:text-bottom;
+        }
+
+    }
+
+
+    //Imagenes de redes sociales
+    .imagenes_redes{
+        display: flex;
+        align-items: center;
+        
+        img{
+            width: auto;
+            height: 1cm;
+        }
+        .instagram{
+            width: auto;
+            height: 1.1cm;
+        }
+        .linkedIn{
+            width: auto;
+            height: 1.3cm;
+        }
+    }
+}

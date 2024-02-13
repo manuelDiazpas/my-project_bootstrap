@@ -1,0 +1,43 @@
+
+/*Centrado del Formulario*/
+.formulario{
+    display: flex;
+    justify-content: center;
+    height: 20cm;
+}
+
+/*Caracteristicas del formulario en si*/
+form{
+    background-color: $colorFondoMenus;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    border-radius: 5%;
+
+    //Caracteristicas de los inputs
+    input{
+        outline: none;
+        &:required:invalid{
+            border: 2px solid $colorCampoRequeridoEInvalido;
+        }
+
+        &:required:valid{
+            border: 2px solid $colorBordeRequeridoValido;
+            background-color: $colorFondo;
+        }
+    }
+    //Introduce un asterisco rojo en los campos requeridos
+    
+    label{
+        &.required{
+            &::after{
+                content:" *";
+                color: $colorBordeRequeridoEInvalido;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,17 @@
+/*Botones del registro*/
+#enviar{
+    margin-bottom: 10px;
+    background-color: $colorFondoProductos;
+
+        &:hover{
+            font-size: x-large;
+            }
+}
+
+.content{
+    button{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+}

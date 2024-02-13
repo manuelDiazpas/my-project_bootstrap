@@ -1,0 +1,15 @@
+/*Despliegue del catálogo*/
+main{
+    grid-column: 2;
+    display: flex;
+    grid-row: 2/4;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+
+    nav{
+        margin-top: 10px;
+    }
+
+}

@@ -1,0 +1,131 @@
+
+/*Pantallas chicas*/
+@media screen and (max-width: $pantallasChicas) {
+    body{
+        margin: 1em 2em;
+    }
+    #menuIzq{
+        display: none;
+    }
+    .catalogo{
+        width: 100%;
+    }
+
+    #myVideo{
+        width: 100%;
+        background: $colorFondo;
+    }
+
+    #content{
+        width: 100%;
+    }
+    
+    header{
+        div{
+            img{
+                display: none;
+            }
+        }
+        #opciones{
+            display: none;
+        }
+        #login{
+            div{
+                display: none;
+            }
+        }
+    }
+}
+
+/*Pantallas medianas*/
+@media screen and (min-width: $pantallasChicas) and (max-width: $pantallasMedianas) {
+    
+    #menuIzq{
+        #descuento{
+            display: none;
+        }
+    }
+
+    #myVideo{
+        width: 100%;
+        background: $colorFondo;
+    }
+    #content{
+        width: 100%;
+    }
+
+    .catalogo{
+        width: 38%;
+    }
+
+    header{
+        div{
+            img{
+                display: none;
+            }
+        }
+    }
+
+  }
+
+/*Pantallas grandes*/
+  @media (min-width: $pantallasMedianas) {
+    body{
+        display: grid;
+        row-gap: 2%;
+        box-sizing: border-box;
+        background-color: $colorFondo;
+        margin-bottom: 9%;
+    }
+    #myVideo{
+        width: 100%;
+        background: $colorFondo;
+    }
+    #content{
+        width: 100%;
+    }
+  }
+
+/*Características del cuerpo*/
+
+/*Características imagenes en general*/
+img{
+    width: $anchuraImagen;       
+}
+
+/*Caracteristicas del video*/
+#myVideo {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+/*Caracteristicas del contenido*/
+.content {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+#grafica{
+    width: 83%;
+}
+
+/*Animación del contenido*/
+.letra{
+    animation: movimiento 10s ease-in-out infinite;
+    animation-delay: 3s;
+
+    @keyframes movimiento {    
+        40% { transform: translate(45%); }
+        80% { transform: translate(-45%); }
+        100% { transform: translate(0%); }
+        }
+    
+}
+
